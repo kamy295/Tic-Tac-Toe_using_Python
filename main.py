@@ -1,6 +1,5 @@
 #Global Variable
 
-
 #game board
 board = ["-", "-", "-", 
          "-", "-", "-",
@@ -15,6 +14,7 @@ winner = None
 
 #Whos turn is it?
 current_player = "X"
+
 
 def display_board():
   print(board[0] + " | " + board[1] + " | " + board[2])
@@ -184,7 +184,7 @@ def check_if_tie():
     game_is_still_running = False
   return
 
- 
+#flip player from one player to another
 def flip_player():
   
   # To Set the global variable
